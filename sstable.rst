@@ -47,7 +47,7 @@ CRC校验码是循环冗余校验校验码，校验范围包括数据以及压�
 逻辑结构
 ~~~~~~~~
 
-在逻辑上，根据功能不同，leveldb在逻辑上又将sstable分为：
+在逻辑上，，sstable包含多个block，根据功能不同，leveldb在逻辑上又将sstable分为：
 
 1. **data block**: 用来存储key value数据对；
 2. **filter block**:
